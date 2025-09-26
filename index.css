@@ -1,0 +1,147 @@
+html {
+  font-size: 100%;
+  font-family: "shabnam";
+  background-image: linear-gradient(
+    45deg,
+    rgb(159, 160, 224),
+    rgb(88, 114, 185)
+  );
+  width: 100vw;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+@font-face {
+  font-family: "shabnam";
+  src: url("./Shabnam/shabnam/Shabnam.woff2");
+  src: url("./Shabnam.woff2");
+}
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.input {
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  background-color: inherit;
+}
+.city-name {
+  font-size: 1.4rem;
+}
+.mande {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: solid 1px rgb(99, 99, 99);
+  border-radius: 0.4rem;
+  width: 12rem;
+  text-align: center;
+}
+.times {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(
+    45deg,
+    rgb(204, 219, 241),
+    rgb(173, 196, 230)
+  );
+  border-radius: 0.2rem;
+}
+.icon {
+  align-self: center;
+  text-align: center;
+  margin: 0.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("./search.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.result {
+  background-color: white;
+  border-radius: 0.2rem;
+}
+.time {
+  width: 6rem;
+  border: solid 1px rgb(116, 112, 112);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.eleman {
+  margin-top: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+  border: solid 1px rgb(116, 112, 112);
+  border-radius: 3rem;
+}
+.one .eleman {
+  background-image: url("./five.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.two .eleman {
+  background-image: url("./two.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.three .eleman {
+  background-image: url("./one.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.four .eleman {
+  background-image: url("./two.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.five .eleman {
+  background-image: url("./three.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.six .eleman {
+  background-image: url("./four.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.ss {
+  font-size: 2rem;
+}
+
+@media all and (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+  .times {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.2rem;
+  }
+  .container {
+    gap: 0.7rem;
+  }
+}
