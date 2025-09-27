@@ -34,7 +34,7 @@ const fethcity = async (city) => {
   return result;
 };
 const getData = () => {
-  const value = input.value.trim() || "تهران";
+  const value = input.value.trim() || "تبریز";
   const result = fethcity(value);
   if (result) {
     result.then((response) => {
@@ -131,3 +131,4 @@ const setTime = (...times) => {
 
 icon.addEventListener("click", getData);
 getData();
+
